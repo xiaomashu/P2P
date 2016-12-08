@@ -197,7 +197,7 @@ footer .row p {
 #realAuth .top-title {
   text-align: center;
   font: 14px "微软雅黑";
-  color: #AE5B59 ;
+  color: #AE5B59;
 }
 #realAuth a button {
   margin-top: -35px;
@@ -244,7 +244,7 @@ footer .row p {
 }
 #menulist {
   border: 1px solid #DDDDDD;
-  border-top: 0 ;
+  border-top: 0;
 }
 #menulist h3 {
   text-align: center;
@@ -261,20 +261,20 @@ footer .row p {
   font: 16px "微软雅黑";
 }
 #menulist .table .table-item01 {
-  background: url(../images/bank_list.png) no-repeat;
+  background: url("../images/bank_list.png") no-repeat;
 }
 #menulist .table .table-item02 {
-  background: url(../images/bank_list.png) no-repeat 0 -32px;
+  background: url("../images/bank_list.png") no-repeat 0 -32px;
 }
 #menulist .table .table-item03 {
-  background: url(../images/bank_list.png) no-repeat 0 -108px;
+  background: url("../images/bank_list.png") no-repeat 0 -108px;
 }
 #invest h4 {
   font: 18px "微软雅黑";
   margin: 0;
 }
 #invest .row {
-  margin-top: 20px ;
+  margin-top: 20px;
 }
 #invest .row h5 {
   font-family: "微软雅黑";
@@ -295,4 +295,116 @@ footer .row p {
 }
 #money .row .col-md-4 span {
   color: #337AB7;
+}
+.el-borrow-form-tip {
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 20px #ddd;
+  padding: 20px 30px;
+  position: absolute;
+  top: 10px;
+  right: 350px;
+}
+.el-borrow-form-tip p {
+  font: 12px "微软雅黑";
+}
+#borrow .col-md-4 {
+  background: #F9F9F9;
+  width: 30%;
+  padding: 0;
+  margin-right: 3%;
+}
+#borrow .col-md-4 header {
+  margin: 0;
+  background: #40D47E;
+  color: #fff;
+}
+#borrow .col-md-4 header h3 {
+  margin: 0;
+  height: 40px;
+  font-family: "微软雅黑";
+  padding-left: 20px;
+  line-height: 40px;
+}
+#borrow .col-md-4 header .item03 {
+  background: #2CA2EE;
+}
+#borrow .col-md-4 header .item02 {
+  background: #EC7E20;
+}
+#borrow .col-md-4 article h4 {
+  font-family: "微软雅黑";
+  margin: 15px 10px;
+}
+#borrow .col-md-4 article a {
+  margin: 5px 10px;
+}
+#borrow .col-md-4 article p {
+  font: 14px "微软雅黑";
+  padding: 5px 10px;
+  color: ;
+}
+#borrow .col-md-4 article ul {
+  list-style: none;
+}
+#borrow .col-md-4 article ul P {
+  padding: 0;
+  margin-left: 20px;
+}
+#borrow .col-md-4 article ul li {
+  background: url("../images/sequare.png") no-repeat;
+}
+#borrow .col-md-4 article button {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background: #00A8FF;
+  border: none;
+}
+#borrow .col-md-4 article button a {
+  text-decoration: none;
+  color: #fff;
+}
+#borroeinfo p {
+  margin: 0;
+  font-family: "微软雅黑";
+}
+#borroeinfo #imgbox h5 {
+  text-align: center;
+}
+#borrowcenter h3 {
+  font-family: "微软雅黑";
+  color: #3498DB;
+}
+#borrowcenter h3 small {
+  margin-left: 10px;
+}
+#borrowcenter p {
+  font-family: "微软雅黑";
+}
+#borrowcenter p span {
+  padding-left: 30px;
+  color: #09d;
+}
+#borrowright p {
+  font-family: "微软雅黑";
+}
+#borrowright p span {
+  padding-left: 30px;
+  color: #09d;
+}
+#mytable #mytable {
+  margin: 0;
+}
+#mytable #mytable td {
+  border: 0;
+  padding: 0;
+}
+#mytable #mytable td p {
+  font-family: "微软雅黑";
+}
+#mytable #mytable td p span {
+  padding-left: 10px;
+  color: #09d;
 }

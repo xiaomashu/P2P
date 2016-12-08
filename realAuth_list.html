@@ -84,102 +84,83 @@
 				<div class="col-md-9" >
 					<div id="realAuth" class="panel panel-default">
 						<div class="panel-heading">
+							<button type="button" id="addbtn" class="btn btn-success pull-right">添加</button>
 							<h5>实名认证</h5>
 						</div>
 						<div class="panel-body">
-							<p class="top-title">为保护您账户安全，实名认证成功之后不能修改信息，请认真填写！</p>
-								<div class="row">
-									<div class="col-md-2"></div>
-									<div class="col-md-8">
-										<form class="form-horizontal">
-											  <div class="form-group">
-											    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
-											    <div class="col-sm-10">
-											     	小麻薯
-											    </div>
-											  </div>
-											  <div class="form-group">
-											    <label for="inputPassword3" class="col-sm-2 control-label">姓名</label>
-											    <div class="col-sm-10">
-											      <input type="password" class="form-control" id="inputPassword3" >
-											    </div>
-											  </div>
-											   <div class="form-group">
-											    <label for="inputPassword3" class="col-sm-2 control-label">性别</label>
-											    <div class="col-sm-10">
-											      <select class="form-control">
-													  <option>男</option>
-													  <option>女</option>													
-													</select>
-											    </div>
-											  </div>
-											   <div class="form-group">
-											    <label for="inputPassword3" class="col-sm-2 control-label">证件类型</label>
-											    <div class="col-sm-10">
-											      <select class="form-control">
-													  <option>身份证</option>
-													  <option>驾驶证</option>
-													  <option>军官证</option>
-													</select>
-											    </div>
-											  </div>
-											  <div class="form-group">
-											    <label for="inputPassword3" class="col-sm-2 control-label">证件号码</label>
-											    <div class="col-sm-10">
-											      <input type="password" class="form-control" id="inputPassword3" >
-											    </div>
-											  </div>
-											  <div class="form-group">
-											    <label for="inputPassword3" class="col-sm-2 control-label">出生日期</label>
-											    <div class="col-sm-10">
-											      <input type="password" class="form-control" id="inputPassword3" >
-											    </div>
-											  </div>
-											  <div class="form-group">
-											    <label for="inputPassword3" class="col-sm-2 control-label">证件地址</label>
-											    <div class="col-sm-10">
-											      <input type="password" class="form-control" id="inputPassword3" >
-											    </div>
-											  </div>
-											  <div class="form-group" id="img-file">
-											    <label for="inputPassword3" class="col-sm-2 control-label">证件照片</label>
-											    <div class="col-sm-10">
-											    	<p class="text-help text-primary">请点击“选择图片”,选择证件的正反两面照片。</p>
-											      	<div class="row" id="updataimg">
-											      		<div class="col-md-4" >
-											      			<h5>上传正面</h5>
-											      			<div class="innerbox">
-											      				
-											      			</div>
-												      	</div>
-											      		<div class="col-md-4">
-											      			<h5>上传反面</h5>
-											      			<div class="innerbox">
-											      				
-											      			</div>
-											      		</div>
-											      		<div id="seemore" class="col-md-3">
-											      			<a href="###">查看样板</a>
-											      		</div>
-											      	</div>
-											    </div>
-											  </div>
-											
-											  <div class="form-group">
-											    <div class="col-sm-offset-2 col-sm-10">
-											    	<button type="button" class="btn btn-primary">提交认证</button>
-												 </div>
-											  </div>
-											</form>	
-									</div>
-									<div class="col-md-2"></div>
-								</div>							
+							<table class="table table-bordered table-hover" id="table01">
+								<thead>
+									<tr>
+										<th>id</th>
+										<th>姓名</th>
+										<th>身份证</th>
+										<th>电话	</th>
+										<th>城市</th>
+										<th>状态	</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div></aside>
+				<div class="container">
+			<!--data-target="#model" 跳转目标 -->
+			<button id="btn01" type="button" class="btn btn-primary">点击登录</button>
+			<!--modal声明为模态框 fade 淡入淡出  data-backdrop="false" 去掉背景色-->
+			<div class="modal fade" id="model" >
+				<!--modal-dialog 声明为模态框-->
+				<div class="modal-dialog">
+					<!--modal-content 模态框的内容-->
+					<div class="modal-content">
+						<!--modal-header 模态框的头部-->
+						<div class="modal-header">
+							<span id="close" style="cursor: pointer;" class="pull-right">&times;</span>
+							<h4 class="modal-title">用户登录</h4>
+							
+						</div>
+						<!--modal-body 模态框的内容-->
+						<div class="modal-body">
+							<form >
+							  <div class="form-group">
+							    <label for="userid">id</label>
+							    <input type="text" class="form-control" id="userid" value="">
+							  </div>
+							   <div class="form-group">
+							    <label for="username">姓名</label>
+							    <input type="text" class="form-control" id="username" value="" placeholder="">
+							  </div>
+							  <div class="form-group">
+							    <label for="idcord">身份证</label>
+							    <input type="text" class="form-control" id="idcord" value="" placeholder="">
+							  </div>
+							  <div class="form-group">
+							    <label for="phone">电话</label>
+							    <input type="tel" class="form-control" id="phone" value="" placeholder="">
+							  </div>
+							  <div class="form-group">
+							    <label for="citys">城市</label>
+							    <input type="text" class="form-control" id="citys" value="" placeholder="">
+							  </div>
+							  <div class="form-group">
+							    <label for="status">状态</label>
+							    <input type="text" class="form-control" id="status" value="" placeholder="">
+							  </div>
+						</form>
+						</div>
+						<!--modal-footer 模态框的尾部-->
+						<div class="modal-footer">
+							  <button type="submit" class="btn btn-primary" id="save">保存</button>
+							  <button type="submit" class="btn btn-primary">取消</button>
 						</div>
 					</div>
 				</div>
-				
-				
-			</aside>
+			</div>
+		</div>
+		
 		</div>
 		<!--中间部分结束-->
 		<footer class="navbar-default ">
@@ -209,6 +190,24 @@
 		
 			<script type="text/javascript">
     	$(function(){
+    		//点击添加 显示模态框
+    		$("#addbtn").click(function(){
+    			$("#model").modal("show");
+    		});
+    		//点击图标隐藏模态框
+    		$("#close").click(function(){
+					$("#model").modal("hide")
+				});
+			//点击保存按钮 
+			$("#save").click(function(){
+					//点击保存按钮之后 
+					//获取表单的内容
+					//提交到后台
+					//手动关闭页面
+					alert("保存成功");
+					$("#model").modal("hide");
+				});
+    		//读取数据并显示
     		$.ajax({
     			type:"get",
     			url:"http://localhost:3000/mockapi",
@@ -216,11 +215,27 @@
     			dataType:"jsonp",
     			success:function(data){
     				//写显示表格的业务逻辑
-		 				console.log(data);
-                    //1 获取到表格的tbody
-                    //2 循环 data数据   拼接tr 装上td
-                    //3 把tr 添加到tbody 
-    			},
+    				
+		 			var dataArr=data.itemGroup;
+		 			//1 获取到表格的tbody
+		 			var tbody=$("#table01");
+		 			//定义编辑和删除按钮
+		 			var html='<button type="button" class="btn btn-success ">编辑</button><button type="button" class="btn btn-danger">删除</button>';
+		 			//2 循环 data数据   拼接tr 装上td
+		 			$.each(dataArr, function(index,item) {
+		 				//外循环生成行
+		 				var tr=$("<tr></tr>");
+		 				//内循环生成列
+		 				$.each(item, function(index1,item2) {
+		 					var td="<td>"+item2+"</td>";
+		 					//td生成之后就追加到tr里面
+		 					$(td).appendTo(tr);
+		 				});
+		 				//3 把tr 添加到tbody 
+		 				tr.append($("<td>"+html+"</td>"));
+		 				tr.appendTo(tbody);
+		 			});
+                 },
     			error:function(err){
     				console.log(err);
     			}
